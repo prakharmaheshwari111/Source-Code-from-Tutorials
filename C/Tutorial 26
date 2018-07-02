@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+float numberoftests = 0;
+float average = 0;
+float grade = 0;
+float scoreentered = 0;
+printf("Enter 0 when completed.\n \n");
+do{ printf("\n Tests: %.0f  Average: %.2f" , numberoftests,average);
+    printf("\n Enter test score.");
+    scanf(" %f", &scoreentered);
+    grade += scoreentered;
+    numberoftests ++;
+    average = grade/numberoftests;
+    } while (scoreentered !=0);
+
+
+
+
+
+
+
+
+return 0;
+}
